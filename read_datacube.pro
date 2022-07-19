@@ -30,7 +30,7 @@
 
 pro read_AWSOM_CR2082,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_AWSOM_CR2082.dat'
+  file = 'Ne_AWSoM_CR2082.dat'
   rmin =  2.0
   rmax = 12.0
   nr   = 200
@@ -42,7 +42,7 @@ end
 
 pro read_AWSOM_CR2152,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_AWSOM_CR2152.dat'
+  file = 'Ne_AWSoM_CR2152.dat'
   rmin =  2.0
   rmax = 12.0
   nr   = 200
@@ -56,7 +56,7 @@ end
 
 pro read_SRT_CR2082_Aphelion,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2082_aphelion.dat'
+  file = 'Ne_SRT_CR2082_Aphelion.dat'
   rmin =  5.1
   rmax = 12.7
   nr   = 38
@@ -72,7 +72,7 @@ end
 
 pro read_SRT_CR2152_Aphelion,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2152_aphelion.dat'
+  file = 'Ne_SRT_CR2152_Aphelion.dat'
   rmin =  5.1
   rmax = 12.7
   nr   = 38
@@ -87,7 +87,7 @@ end
 
 pro read_SRT_CR2082_Perihelion,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2082_perihelion.dat'
+  file = 'Ne_SRT_CR2082_Perihelion.dat'
   rmin =  1.8
   rmax =  5.2
   nr   = 34
@@ -102,7 +102,7 @@ end
 
 pro read_SRT_CR2152_Perihelion,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2152_perihelion.dat'
+  file = 'Ne_SRT_CR2152_Perihelion.dat'
   rmin =  1.8
   rmax =  5.2
   nr   = 34
@@ -117,7 +117,7 @@ end
 
 pro read_SRT_CR2082_MaxLat,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2082_maxlat.dat'
+  file = 'Ne_SRT_CR2082_MaxLat.dat'
   rmin =  3.3
   rmax =  7.5
   nr   = 42
@@ -132,7 +132,7 @@ end
 
 pro read_SRT_CR2152_MaxLat,rad,theta,phi,Ne_datacube
   dir = './'
-  file = 'Ne_SRT_CR2152_maxlat.dat'
+  file = 'Ne_SRT_CR2152_MaxLat.dat'
   rmin =  3.3
   rmax =  7.5
   nr   = 42
