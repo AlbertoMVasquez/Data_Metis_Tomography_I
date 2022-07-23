@@ -1,5 +1,7 @@
- ; Please follow instructions below to read into memory:
-; * The 3D data cubes of MHD-simulations and tomographic-reconstructions.
+; Please follow instructions below to read into memory:
+;
+; * The 3D data cubes of MHD-simulations and SRT-reconstructions.
+;
 ; * The cell-centered uniform spherical grid on which each data cube is provided.
 
 ;======================================================================================================
@@ -12,7 +14,7 @@
 ; To read the electron density [Ne] of the CR 2082 AWSoM simulation:
 ; IDL> read_AWSOM_CR2082,rad,theta,phi,Ne_datacube
 ;      
-; To read the tomography-reconstructed Ne for the aphelion segment:
+; To read the SRT-reconstructed Ne for the aphelion segment:
 ; IDL> read_SRT_CR2082_Aphelion,rad,theta,phi,Ne_datacube
 ;
 ; Similar commands allow to read the Perihelion and Maximum-latitude results.
