@@ -9,24 +9,20 @@
 ;======================================================================================================
 ; CR-2082:
 
-; To read the AWSoM model N_e:
+; To read the electron density [Ne] of the CR 2082 AWSoM simulation:
 ; IDL> read_AWSOM_CR2082,rad,theta,phi,Ne_datacube
 ;      
-; To read the VL-Tomography N_e (same as Perihelion and Maximum latitud):
+; To read the tomography-reconstructed Ne for the aphelion segment:
 ; IDL> read_SRT_CR2082_Aphelion,rad,theta,phi,Ne_datacube
+;
+; Similar commands allow to read the Perihelion and Maximum-latitude results.
 
 ;======================================================================================================
 ; CR-2152:
-
-; To read the AWSoM model N_e:
-; IDL> read_AWSOM_CR2152,rad,theta,phi,Ne_datacube
-;      
-; To read the VL-Tomography N_e (same as Perihelion and Maximum latitud):
-; IDL> read_SRT_CR2152_Aphelion,rad,theta,phi,Ne_datacube
-
+;
+; Repeat the commands above, changing the sufffix 'CR2082' by 'CR2152'
+;
 ;======================================================================================================
-
-
 
 pro read_AWSOM_CR2082,rad,theta,phi,Ne_datacube
   dir = './'
@@ -52,8 +48,6 @@ pro read_AWSOM_CR2152,rad,theta,phi,Ne_datacube
   return
 end
 
-
-
 pro read_SRT_CR2082_Aphelion,rad,theta,phi,Ne_datacube
   dir = './'
   file = 'Ne_SRT_CR2082_Aphelion.dat'
@@ -68,7 +62,6 @@ pro read_SRT_CR2082_Aphelion,rad,theta,phi,Ne_datacube
   help,rad,theta,phi,Ne_datacube
   return
 end
-
 
 pro read_SRT_CR2152_Aphelion,rad,theta,phi,Ne_datacube
   dir = './'
@@ -145,7 +138,6 @@ pro read_SRT_CR2152_MaxLat,rad,theta,phi,Ne_datacube
   return
 end
 
-
 pro read_datacube,dir,file,rmin,rmax,nr,nt,rad,theta,phi,Ne_datacube
 ; INPUTS: dir, file, rmin, rmax, nr, ntH.
 ; OUTPUTS: rad, theta, phi, Ne_datacube
@@ -178,7 +170,6 @@ pro read_datacube,dir,file,rmin,rmax,nr,nt,rad,theta,phi,Ne_datacube
 
   return
 end
-
 
 ; Eliminate heights above Irmax and below Irmin
 pro cut_datacube,rad,Ne_datacube,Irmin,Irmax
